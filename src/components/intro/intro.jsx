@@ -12,10 +12,10 @@ const Intro = () => {
             <div className="i-title-wrapper">
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Word Press Developer</div>
+              <div className="i-title-item">Word Press</div>
             </div>
           </div>
-          <p className="i-desc">
+          <p className="i-desc-top">
             I design and develop tailored solutions for clients of all sizes,
             specializing in crafting stylish, modern websites, web services, and
             online stores. My expertise includes React.js, Node.js, WordPress,
@@ -82,6 +82,7 @@ const Intro = () => {
       <div className="i-right">
         <div className="i-bg"></div>
         <img src={Me} alt="" className="i-img" />
+        
       </div>
     </div>
   );
