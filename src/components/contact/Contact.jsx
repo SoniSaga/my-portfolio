@@ -1,65 +1,63 @@
-import "./contact.css";
-import Phone from "../../img/phone.png";
-import Email from "../../img/email.png";
-import Address from "../../img/address.png";
-import { useContext, useRef, useState } from "react";
-import { ThemeContext } from "../../context";
+import Link from "next/link";
+import Image from "next/image";
+import ConnectButton from "@/components/misc/button/connectbutton/ConnectButton";
+import SocialMedia from "@/components/misc/socialmedia/SocialMedia";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [done, setDone] = useState(false)
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
-        formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
-    <div className="c">
-      <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
-          <h1 className="c-title">Let's discuss your project</h1>
-          <div className="c-info">
-            <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              +1 1234 556 75
-            </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
-              contact@lama.dev
-            </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
-            </div>
-          </div>
-        </div>
-        <div className="c-right">
-          <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
-          </p>
-          
-        </div>
+    <div className="flex flex-col sm:flex-row bg-[#faebd7] h-full py-12 items-center justify-center">
+      <div className="w-[100%] sm:w-[20%] flex justify-center items-center">
+        <h1 className="text-xl sm:text-9xl font-bold w-auto">Shall we ?</h1>
       </div>
+      {
+        <div className="flex flex-col sm:w-[55%] sm:px-40">
+          <p className="p-4 sm:px-0">
+            I work with businesses to create modern, high-performance,
+            resp-onsive sites with clean code that drive growth and enhance user
+            experiences. Want to work together?
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4 sm:mt-10">
+            <ConnectButton
+              imagePath={"/button/email.png"}
+              href={"https://www.google.com"}
+              buttonText={"Email Me!!"}
+            />
+            <ConnectButton
+              imagePath={"/button/whatsapp.png"}
+              href={"https://www.google.com"}
+              buttonText={"What's App Me!!"}
+            />
+          </div>
+          <div className="flex gap-6 p-2 mt-4 items-center justify-center">
+            <SocialMedia
+              href="https://www.google.com"
+              src="/socialmedia/facebook.png"
+              alt="Facebook"
+            />
+            <SocialMedia
+              href={"https://www.google.com"}
+              src={"/socialmedia/github.png"}
+              alt={"Github"}
+            />
+            <SocialMedia
+              href={"https://www.google.com"}
+              src={"/socialmedia/instagram.png"}
+              alt={"Instagram"}
+            />
+            <SocialMedia
+              href={"https://www.google.com"}
+              src={"/socialmedia/linkedin.png"}
+              alt={"Linkdin"}
+            />
+            <SocialMedia
+              href={"https://www.google.com"}
+              src={"/socialmedia/twitter.png"}
+              alt={"Twitter"}
+            />
+          </div>
+          <div className="flex justify-center items-center"></div>
+        </div>
+      }
     </div>
   );
 };

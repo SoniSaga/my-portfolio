@@ -1,32 +1,22 @@
 export const products = [
   {
     id: 1,
-    img: "",
+    img: "my-portfolio.png",
     link: "http://lama.dev",
   },
   {
     id: 2,
-    img: "",
+    img: "lasless.png",
     link: "http://lama.dev",
   },
   {
     id: 3,
-    img: "",
+    img: "school-management-system.png",
     link: "http://lama.dev",
   },
   {
     id: 4,
-    img: "",
-    link: "http://lama.dev",
-  },
-  {
-    id: 5,
-    img: "",
-    link: "http://lama.dev",
-  },
-  {
-    id: 6,
-    img: "",
+    img: "movie-dux.png",
     link: "http://lama.dev",
   },
 ];
