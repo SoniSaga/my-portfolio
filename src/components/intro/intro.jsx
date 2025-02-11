@@ -1,4 +1,5 @@
 import "./intro.css";
+import DirectContact from "@/components/directconnect/DirectConnect";
 
 const Intro = () => {
   return (
@@ -20,6 +21,7 @@ const Intro = () => {
             online stores. My expertise includes React.js, Node.js, WordPress,
             and Figma.
           </p>
+          <DirectContact />
         </div>
         <svg
           width="75"

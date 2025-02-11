@@ -2,7 +2,7 @@ import "./product.css";
 import GitButton from "../misc/button/gitbutton/GitButton";
 import WebButton from "../misc/button/webbutton/WebButton";
 
-const Product = ({ img, link }) => {
+const Product = ({ img, deployedWebsiteLink, githubLink }) => {
   return (
     <div className="mb-8">
       <div className="p">
@@ -11,13 +11,13 @@ const Product = ({ img, link }) => {
           <div className="p-circle"></div>
           <div className="p-circle"></div>
         </div>
-        <a href={link} target="_blank" rel="noreferrer">
+        <a href={deployedWebsiteLink} target="_blank" rel="noreferrer">
           <img src={img} alt="" className="p-img" />
         </a>
       </div>
       <div className=" flex sm:p-2 sm:mx-3 justify-evenly gap-2 ">
-        <GitButton className="" />
-        <WebButton />
+        <GitButton githubLink={githubLink} />
+        <WebButton deployedWebsiteLink={deployedWebsiteLink} />
       </div>
     </div>
   );

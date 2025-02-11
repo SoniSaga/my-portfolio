@@ -1,4 +1,5 @@
 import "./about.css";
+import DirectContact from "@/components/directconnect/DirectConnect";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
           Designer, developer, and tech enthusiast—creating exceptional web and
           app experiences.
         </p>
+
         <p className="a-desc">
           With over 4.5 years of experience as a Full-Stack Developer, I
           specialize in creating userfriendly websites with quality handwritten
@@ -26,6 +28,9 @@ const About = () => {
           businesses develop responsive and user-friendly websites and web
           applications.
         </p>
+        <div className="flex flex-row justify-center sm:justify-start">
+        <DirectContact />
+        </div>
       </div>
     </div>
   );

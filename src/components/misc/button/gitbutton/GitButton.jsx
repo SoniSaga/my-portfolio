@@ -1,8 +1,9 @@
 import "./misc.css";
+import Link from "next/link";
 
-const GitButton = () => {
+const GitButton = ({ githubLink }) => {
   return (
-    <>
+    <Link href={githubLink} target="_blank" rel="noopener noreferrer">
       <div className="button-icon">
         <div className="icon">
           <svg viewBox="0 0 24 24">
@@ -17,7 +18,7 @@ const GitButton = () => {
           <span className="side top">Visit GitHub</span>
         </div>
       </div>
-    </>
+    </Link>
   );
 };
 
