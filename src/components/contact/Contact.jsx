@@ -19,12 +19,12 @@ const Contact = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4 sm:mt-4">
           <ConnectButton
-            imagePath={"/button/email.png"}
+            imagePath={"./button/email.png"}
             href={`mailto:${"shantanusoni979@gmail.com"}`}
             buttonText={"Email Me!!"}
           />
           <ConnectButton
-            imagePath={"/button/whatsapp.png"}
+            imagePath={"./button/whatsapp.png"}
             href={"http://wa.me/919110403077"}
             buttonText={"What's App Me!!"}
           />
@@ -32,18 +32,18 @@ const Contact = () => {
         <div className="flex gap-6 p-2 mt-4 items-center justify-center">
           <SocialMedia
             href={"https://github.com/SoniSaga"}
-            src={"/socialmedia/github.png"}
+            src={"./socialmedia/github.png"}
             alt={"Github"}
           />
 
           <SocialMedia
             href={"https://www.linkedin.com/in/shantanu-soni-8b2a37342/"}
-            src={"/socialmedia/linkedin.png"}
+            src={"./socialmedia/linkedin.png"}
             alt={"Linkdin"}
           />
           <SocialMedia
             href={"https://x.com/SSoni37727"}
-            src={"/socialmedia/twitter.png"}
+            src={"./socialmedia/twitter.png"}
             alt={"Twitter"}
           />
         </div>
