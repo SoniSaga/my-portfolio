@@ -5,7 +5,7 @@ const DirectConnect = () => {
     <div className="flex flex-col text-xs gap-1 mt-4">
       <div className="flex flex-row justify-start items-center gap-2">
         <Image
-          src={"./directcontact/email.png"}
+          src={"/directcontact/email.png"}
           width={20}
           height={20}
           alt="Email Id"
@@ -14,7 +14,7 @@ const DirectConnect = () => {
       </div>
       <div className="flex flex-row justify-start items-center gap-2">
         <Image
-          src={"./directcontact/phone.png"}
+          src={"/directcontact/phone.png"}
           width={20}
           height={20}
           alt="Phone Number"

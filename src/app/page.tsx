@@ -4,13 +4,11 @@ import Contact from "@/components/contact/Contact";
 import Intro from "@/components/intro/Intro";
 import ProductList from "@/components/productList/ProductList";
 
-
 const Homepage = () => {
-
   return (
     <div
       style={{
-        backgroundColor:  "white"
+        backgroundColor: "white",
       }}
     >
       <Intro />

@@ -19,6 +19,7 @@ const ProductList = () => {
             img={item.img}
             deployedWebsiteLink={item.deployedWebsiteLink}
             githubLink={item.githubLink}
+            techUsed={item.techUsed}
           />
         ))}
       </div>
